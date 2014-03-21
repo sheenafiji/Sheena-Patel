@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="main" id="travels_wrap" style="height:500px;">
+
+</div>
+
+<script type="text/javascript">
+var bubbleMap = new Datamap({
+				element: document.getElementById('travels_wrap'),
+				fills: 			{
+								defaultFill: '#CCA300  ', 
+								Resided:'#7F1D47', 
+								Visited:'#51AEBF'
+								},
+        		geographyConfig: {
+        						highlightOnHover: false,
+        						popupOnHover: false,
+        						borderColor: '#8f9b8f',
+        						},
+        		setProjection: function(element) {
+			        		 		var projection = d3.geo.mercator()
+			            				.center([10, -12])
+			            			var path = d3.geo.path()
+			            				.projection(projection);
+				          		return {path: path, projection: projection};
+				        		},
+				});
+				
+bubbleMap.bubbles({{places|safe}}, {
+				borderWidth: 1,
+				fillOpacity: 1,
+				borderColor: '#303038',
+				highlightFillColor: '#FF6600',
+				highlightBorderWidth: 0,
+				popupTemplate: function (geo, data) {
+					return [
+						'<div id="map_hover">' + data.location + '</div>'].join('');		
+					
+				},
+	});
+	
+bubbleMap.legend();
+
+
+</script>
+{% endblock %}
+

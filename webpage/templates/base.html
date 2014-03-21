@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sheena Patel</title>
+<link rel="stylesheet" href="/static/css/master.css" type="text/css" />
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://datamaps.github.io/scripts/datamaps.world.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+{% load staticfiles %}
+
+
+<nav>
+	<ul>
+<!-- 		<li><a href="/home">HOME</a></li> -->
+		<li><a href="/aboutme">ABOUT ME</a></li>
+		<li><a href="/resume">RESUME</a></li>
+		<li><a href="/travels">TRAVELS</a></li>
+		<li><a href="/contact">CONTACT</a></li>
+	</ul>
+</nav>
+
+<div id="content">
+	{% block content %}
+	{% endblock %}
+</div>
+
+<footer>
+ 	<!-- Footer -->
+ 	<div id="external_links">
+ 		<ul>
+		 	<li><a href="http://www.linkedin.com/in/sheenapatel15" target="_blank">LinkedIn</a></li>
+		 	<li><a href="https://www.facebook.com/sheena.patel.7359" target="_blank">facebook</a></li>
+	 	</ul>
+	</div>
+	<p id="footer_text">© Copyright</p>
+</footer>
+
+
+
+</body>
+</html>

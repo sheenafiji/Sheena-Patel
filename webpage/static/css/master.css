@@ -1,0 +1,226 @@
+/* Makeshift CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+html, body {
+	height: 100%
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #FFFFFF;
+    background: #212121;
+}
+
+/* Center all main classes */
+.main {
+	margin: 0 auto;
+	width: 960px; 
+}
+
+#content {
+	min-height: 100%;
+	padding-top: 180px;
+	padding-bottom: 90px;
+}
+
+#aboutme_wrap h2 {
+	font-size: 28px;
+	line-height: 44px;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+/* Nav Menu */
+nav {
+	float: left;
+	width: 100%;
+   	padding-top: 20px;
+}
+
+nav ul {
+	float:left;
+    list-style: none;
+    position:relative;
+   	left:50%;
+   	text-align:center;
+}
+
+nav ul li {
+   	float:left;
+   	list-style:none;
+   	position:relative;
+   	right:50%;
+}
+ 
+nav ul li a {
+    display: block;
+    margin-right: 10px;
+    width: 140px;
+    font-size: 23px;
+    line-height: 55px;
+    text-decoration: none;
+    color: #7C826E;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+nav ul li.selected a {
+    color: #6B6B6B;
+}
+
+/* Footer */
+footer {
+	width: 100%;
+	margin-top: -90px;
+	height: 90px;
+	background-color: #7C826E;
+}
+
+#footer_text {
+	float: right;
+	padding: 52px 10px 0 0;
+}
+
+#external_links {
+	float: left;
+	padding: 52px 0 0 10px;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px #35382F;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	padding-right: 8px;
+}
+
+footer a:hover {
+	color: #6B6B6B
+}
+
+footer ul li {
+	float:left;
+   	list-style:none;
+   	color: white;
+	text-shadow: 2px 2px #35382F;
+}
+
+footer ul li:before { 
+	content: "|";
+	padding: 0 12px;
+}
+	
+footer ul li:first-child:before { 
+	content: ""; 
+	padding: 0;
+}
+
+/* About me page */
+section {
+	width: 400px;
+	float: left;
+	margin: 0 0 0 110px;
+}
+
+aside img {
+	float: right;
+	display: block;
+	margin: 0 110px 0 0;
+}
+
+/* Resume page (use sass in future to improve efficiency)*/
+#resume_wrap {
+	padding: 15px;
+	margin-bottom: 80px;
+	background-color: #E7E7E7;
+	color: black;
+	border: 2px solid blue;
+}
+
+#resume_wrap h2 {
+	padding: 5px 0 10px 5px;
+	border-bottom: 1px solid #7C826E;
+	font-size: 35px;	
+}
+
+#resume_wrap span {
+	float: right;
+	text-align: right;
+	font-size: 15px;
+}
+
+#resume_wrap dt {
+	padding: 7px 0;
+	font-weight: 600;
+	font-size: 20px;
+	text-shadow: 2px 2px #35382F;
+	background-color: #7C826E;
+	border: 1px solid blue;
+	color: #FFFFFF;
+	margin: 15px 0;
+}
+
+#resume_wrap h3 {
+	margin: 10px 0 5px 0;
+	font-size: 18px;
+}
+
+#resume_wrap dd ul {
+	margin-left: 40px;
+}
+
+/* Travels page */
+#map_hover {
+	padding-top: 100px;
+	padding-left: 150px;
+	font-weight: 600;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+
+.datamaps-legend { 
+	float: right !important; 
+	position: static !important;
+	margin: -100px 20px 0 0 !important;
+	}
+	
+/* Contact page */
+#contact_wrap {
+	text-align: center;
+	color: orange;
+}
+
+#contact_wrap p a:hover, #contact_wrap ul a:hover {
+    color: #6B6B6B;
+}
+
+#contact_wrap p a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#contact_wrap ul li {
+	list-style: none;
+	padding-top: 10px;
+}
+
+#contact_wrap ul a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px #35382F;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
